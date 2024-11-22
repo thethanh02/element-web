@@ -46,6 +46,8 @@ const getIcon = (brand: IdentityProviderBrand | string): string | null => {
             return require(`../../../../res/img/element-icons/brands/google.svg`).default;
         case IdentityProviderBrand.Twitter:
             return require(`../../../../res/img/element-icons/brands/twitter.svg`).default;
+        case "laoid":
+            return require(`../../../../res/img/element-icons/brands/laoid.svg`).default;
         default:
             return null;
         /* eslint-enable @typescript-eslint/no-require-imports */
