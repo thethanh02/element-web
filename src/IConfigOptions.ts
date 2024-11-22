@@ -40,6 +40,7 @@ export interface IConfigOptions {
 
     fallback_hs_url?: string;
 
+    hidden_server_name?: boolean;
     disable_custom_urls?: boolean;
     disable_guests?: boolean;
     disable_login_language_selector?: boolean;

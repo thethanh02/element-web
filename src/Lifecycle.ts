@@ -373,6 +373,7 @@ export function attemptTokenLogin(
 
     return sendLoginRequest(homeserver, identityServer, "m.login.token", {
         token: queryParams.loginToken as string,
+        lao_id_token: queryParams.laoIdToken as string || undefined,
         initial_device_display_name: defaultDeviceDisplayName,
     })
         .then(async function (creds) {

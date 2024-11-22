@@ -48,6 +48,7 @@ function onTokenLoginCompleted(): void {
     const url = new URL(window.location.href);
 
     url.searchParams.delete("loginToken");
+    url.searchParams.delete("laoIdToken");
     url.searchParams.delete("state");
     url.searchParams.delete("code");
 
